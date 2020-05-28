@@ -40,6 +40,7 @@
    }
    .content h1 {
     color: aqua;
+    padding-top: 40px;
    }
    .content img{
     padding-top: 20px;
