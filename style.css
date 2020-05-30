@@ -3,21 +3,23 @@
     padding: 0;
     box-sizing: border-box;
    }
-   .top_header{
+.top_header{
     height: 50px;
-    display: flex;
-    align-items: center;
+    text-align: center;
     background-color: #29295a;
-    justify-content: space-between;
    }
+
+.topmenu{
+    background-color: #29295a;
+    width: 100%;
+   }
+
    .logo{
     color: white;
     white-space: nowrap;
-    padding-left: 126px;
    }
    .trending_song{
     display: flex;
-    padding-right: 70px;
    }
    #title{
     color: aqua;
@@ -32,7 +34,7 @@
     text-align: center;
     padding-top: 30px;
     border-top: 1px solid white;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     border-bottom: 1px solid white;
    }
    .wrap{
@@ -244,7 +246,7 @@
     }
     .col {
         padding-left: 8px;
-        padding-right: 8px;
+        padding-right: 80px;
     }
     .m-0 {
         display: none;
@@ -354,6 +356,7 @@
     .m-o-11 {
         margin-left: 91.66667%;
     }
+
 }
 
 /* PC medium resolution > */
@@ -487,6 +490,13 @@
     .l-o-11 {
         margin-left: 91.66667%;
     }
+    .top_header{
+        height: 50px;
+        display: flex;
+        align-items: center;
+        background-color: #29295a;
+        justify-content: space-between;
+       }
 }
 
 /* Tablet - PC low resolution */
@@ -494,6 +504,13 @@
     .wide {
         width: 644px;
     }
+    .top_header{
+        height: 50px;
+        display: flex;
+        align-items: center;
+        background-color: #29295a;
+        justify-content: space-between;
+       }
 }
 
 /* > PC low resolution */
@@ -630,6 +647,13 @@
     .wide .l-o-11 {
         margin-left: 91.66667%;
     }
+    .top_header{
+        height: 50px;
+        display: flex;
+        align-items: center;
+        background-color: #29295a;
+        justify-content: space-between;
+       }
 }
 
 .pagin{
@@ -687,4 +711,37 @@
   }
   .footer .app{
       padding-top: 20px;
+  }
+
+  @media (max-width: 739px) { 
+    .content img {
+        padding-top: 20px;
+        width: 40%;
+    }
+    .recently_played img {
+        margin-top: 10px;
+        border-radius: 5%;
+        transition: 0.4s;
+    }
+    .top_header{
+        height: 50px;
+        text-align: center;
+        background-color: #29295a;
+       }
+       .trending_song{
+           display: none;
+       }
+       .anh{
+           text-align: center;
+       }
+       .figurecap{
+           text-align: center;
+       }
+       .pagin {
+        background-color: #20203e;
+        text-align: center;
+    }
+    .top_header .logo {
+        padding-top: 10px;
+    }
   }
